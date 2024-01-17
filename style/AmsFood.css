@@ -4,16 +4,34 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
   font-family: "Outfit", sans-serif;
 }
 
 /*------------------------header---------------------------------------------*/
+
 .logo {
   font-size: 35px;
   font-weight: bold;
   color: white;
-  padding: 0 100px;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #ffffff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -22,21 +40,25 @@ nav ul li a {
   width: 100%;
 }
 
+nav ul li {
+  margin-right: 10px;
+}
+
 nav ul {
   float: right;
-  margin-right: 125px;
+  margin-right: 10px;
   font-size: larger;
   margin-top: 12px;
 }
 
 nav li {
   display: inline-block;
-  margin: 0 45px;
+  margin: 0 10px;
   line-height: 80px;
 }
-
 .background {
-  background-image: url(../img/homeFood.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(2, 2, 2, 0.864)),
+    url(../img/homeFood.jpg);
   filter: blur(2px);
   background-size: cover;
   background-position: center;
@@ -66,7 +88,10 @@ nav li {
   text-align: center;
   padding-top: 35px;
 }
-
+.about:hover {
+  background-color: #c74a4a;
+  color: white;
+}
 .about p {
   margin-top: 108px;
   color: #ffffff;
@@ -76,199 +101,75 @@ nav li {
   line-height: 50px;
 }
 
-/*-------------------------Heemelrijck--------------------------*/
+/*-------------------------Heemelrijck----silveren spiegel-----moeders--------------------*/
 
-.food-context ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-}
-.food-context ul li {
-  color: #000000;
-  text-align: left;
-  font: 400 40px/74px "Outfit", sans-serif;
-  display: inline-block;
-  white-space: nowrap;
-  margin-right: 5px;
-  padding: 10px;
-}
-
-.Heemelrijck {
-  background-color: rgb(255, 255, 255);
-  font: 36px "Outfit", sans-serif;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.Heemelrijck-container {
-  text-align: left;
-  width: 532px;
-  height: 420px;
-  margin: 5% 5% 5% 5%;
-}
-
-.Heemelrijck-container h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  left: 113px;
-  top: 1420px;
-  width: 532px;
-  height: 68px;
-}
-
-.Heemelrijck-container p {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.HeemelrijckPhoto {
-  border-radius: 39px;
-  width: 649px;
-  height: 410px;
-}
-
-/*------------------------- silveren spiegel--------------------------*/
-
-.spiegel-context ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #000000;
-}
-.spiegel-context ul li {
-  color: #ffffff;
-  text-align: left;
-  font: 400 40px/74px "Outfit", sans-serif;
-  display: inline-block;
-  white-space: nowrap;
-  margin-right: 5px;
-  padding: 10px;
-}
-
-.spiegel {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  font: 36px "Outfit", sans-serif;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.spiegel-container {
-  text-align: left;
-  width: 532px;
-  height: 420px;
-  margin: 5% 5% 5% 5%;
-}
-
-.spiegel-container h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  left: 113px;
-  top: 1420px;
-  width: 532px;
-  height: 68px;
-}
-
-.spiegel-container p {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.spiegelPhoto {
-  border-radius: 39px;
-  width: 649px;
-  height: 410px;
-}
-
-/*------------------------- moeders--------------------------*/
-
+.Heemelrijck,
 .moeders {
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font: 36px "Outfit", sans-serif;
+  font: 20px "Outfit", sans-serif;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.zwijnen,
+.spiegel {
+  /*------one of the example where i used selecting elements by , (comma)---------*/
 
-.moeders-container {
-  text-align: left;
-  width: 532px;
-  height: 420px;
-  margin: 5% 5% 5% 5%;
-}
-
-.moeders-container h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  left: 113px;
-  top: 1420px;
-  width: 532px;
-  height: 68px;
-}
-
-.moeders-container p {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.moedersPhoto {
-  border-radius: 39px;
-  width: 649px;
-  height: 410px;
-}
-
-/*------------------------- silveren spiegel--------------------------*/
-
-.zwijnen {
   background-color: rgb(0, 0, 0);
   color: white;
-  font: 36px "Outfit", sans-serif;
+  font: 20px "Outfit", sans-serif;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.Heemelrijck-container,
+.spiegel-container,
+.moeders-container,
 .zwijnen-container {
   text-align: left;
-  width: 532px;
-  height: 420px;
   margin: 5% 5% 5% 5%;
 }
 
+.Heemelrijck-container h1,
+.spiegel-container h1,
+.moeders-container h1,
 .zwijnen-container h1 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 20px;
-  left: 113px;
-  top: 1420px;
-  width: 532px;
-  height: 68px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-indent: 5px;
+  word-spacing: 1.5px;
 }
 
+.Heemelrijck-container p,
+.spiegel-container p,
+.moeders-container p,
 .zwijnen-container p {
   font-size: 20px;
   font-weight: 400;
+  width: auto;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-indent: 10px;
+  word-spacing: 2px;
 }
 
+.HeemelrijckPhoto,
+.spiegelPhoto,
+.moedersPhoto,
 .zwijnenPhoto {
   border-radius: 39px;
-  width: 649px;
+  width: 530px;
   height: 410px;
+  border-color: grey;
+  border-style: dashed;
 }
 
 /*-------------------Footer--------------------*/
-
 footer {
   background-color: #fff;
   color: #333;
@@ -316,4 +217,125 @@ footer {
   margin-right: 20px;
   font-size: 24px;
   color: #333;
+}
+
+
+
+/*----------------------responsive design for footer-------------*/
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links li {
+    margin: 10px 0;
+  }
+}
+
+
+@media screen and (min-width: 769px)and (max-width:950px) {
+  footer {
+    margin-top: 60px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .footer-icons i {
+    margin-right: 10px;
+  }
+}
+
+
+
+
+/*---------------------responsive design for navbar---------------*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+
+
+/*----------- rest of media query-----------*/
+@media (max-width: 768px) {
+  .Heemelrijck,
+  .moeders,
+  .zwijnen,
+  .spiegel {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .HeemelrijckPhoto,
+  .spiegelPhoto,
+  .moedersPhoto,
+  .zwijnenPhoto {
+    border-radius: 30px;
+    width: 400px;
+    height: 250px;
+    border-color: grey;
+    border-style: dashed;
+  }
+  .Heemelrijck-container,
+  .spiegel-container,
+  .moeders-container,
+  .zwijnen-container {
+    padding: 20px;
+  }
+  .Heemelrijck-container h1,
+  .spiegel-container h1,
+  .moeders-container h1,
+  .zwijnen-container h1 {
+    font-size: 24px;
+  }
+
+  .Heemelrijck-container p,
+  .spiegel-container p,
+  .moeders-container p,
+  .zwijnen-container p {
+    font-size: 16px;
+  }
 }

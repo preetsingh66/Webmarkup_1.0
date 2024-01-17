@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/style.css" type="text/css" />
+    <meta name="author" content="Mohitpreet" />
+    <link
+      rel="icon"
+      href="img/favicon.png"
+      alt="favicon"
+      size="16x16"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,173 +21,150 @@
     <title>Amsterdam Hidden Gems</title>
   </head>
   <body>
-    <!--------------------header------------------->
+    <script src="./javascript/home.js"></script>
+
+    <!-- header -->
     <nav>
-      <img class="logo" src="./img/LOGO.png" alt="logo" />
+      <a href="./index.html">
+      <img class="logo" src="./img/LOGO.png" alt="logo" title="logo"/></a>
       <ul>
         <li><a href="">Home</a></li>
-        <li><a href="./HiddenGems.html">Hidden gems</a></li>
-        <li><a href="./AmsFood.html">Ams-food</a></li>
-        <li><a href="./transport.html">Transportation </a></li>
+        <li><a href="./HiddenGems.html">Gems</a></li>
+        <li><a href="./AmsFood.html">Food</a></li>
+        <li><a href="./transport.html">Transportation</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    <!--------------------header------------------->
-
-    <div class="background"></div>
-    <div class="text">
+    <section class="background"></section>
+    <header class="text">
       <h1>Amsterdam Hidden Gems</h1>
-    </div>
+    </header>
 
+    <!-- article -->
     <article class="about">
       <p>
         Amsterdam’s world-famous museums and monuments will keep
         culturally-minded
-        <br />sightseers occupied for weeks. But look beyond the best-known
-        attractions, and <br />you’ll find some sparkling hidden gems. From
-        secret cafes and obscure music venues<br />
-        to rooftop bars and a museum in an underground bank vault, here’s our<br />
+        sightseers occupied for weeks. But look beyond the best-known
+        attractions, and <em>you’ll find some sparkling hidden gems</em>. From
+        secret cafes and obscure music venues
+        to rooftop bars and a museum in an underground bank vault, here’s our
         round-up of the best non-touristy things to do in Amsterdam.
       </p>
       <h1>Gems of Amsterdam that most tourists miss</h1>
     </article>
-    <!----------------------------------------Gems------------------------------------------->
-    <div class="gems-context">
-      <ul>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-        <li>Gems</li>
-      </ul>
-    </div>
 
-    <div class="AmsGems">
-      <div class="text-container">
+    <!-- aside for Unveiling Amsterdam’s Hidden Gems -->
+    <aside class="AmsGems">
+      <section class="text-container">
         <h1>Unveiling Amsterdam’s Hidden Gems</h1>
         <p>
           Explore the Amsterdam’s hidden treasures at 'Hidden Gems,' where we
           uncover unique experiences and hidden wonders. Embark on a journey of
-          discovery with us.
+          <em>discovery</em> with us.
         </p>
-        <a href="./HiddenGems.html"
-          ><div class="button">
-            <div class="try-it">Explore Now!</div>
-          </div></a
-        >
-      </div>
-      <img class="homeGems" src="./img/homeGems.png" alt="HomepageHiddenGems" />
-    </div>
+        <a href="./HiddenGems.html" target="_blank">
+          <header class="button">
+            <span class="try-it">Explore Now!</span>
+          </header>
+        </a>
+      </section>
+      <figure>
+        <img
+          class="homeGems"
+          src="./img/homeGems.png"
+          alt="HomepageHiddenGems"
+          title="Amsterdam Hidden Gems Image"
+        />
+      </figure>
+    </aside>
 
-    <!-----------------------Food---------------------------->
-
-    <div class="food-context">
-      <ul>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-        <li>Food</li>
-      </ul>
-    </div>
-
-    <div class="food">
-      <div class="food-container">
+    <!-- aside for Taste the Amsterdam -->
+    <aside class="food">
+      <section class="food-container">
         <h1>Taste the Amsterdam</h1>
         <p>
           Indulge in culinary treasures at 'Hidden Gems' where we unveil the
           world's best-kept food secrets. From local delicacies to global
-          flavors, savor the extraordinary in every bite."
+          flavors, savor the <em>extraordinary</em> in every bite."
         </p>
-        <a href="./AmsFood.html"
-          ><div class="foodBtn">
-            <div class="foodtry">Explore Now!</div>
-          </div></a
-        >
-      </div>
-      <img class="amsfood" src="./img/homeFood.jpg" alt="HomepageHiddenGems" />
-    </div>
+        <a href="./AmsFood.html">
+          <header class="foodBtn">
+            <span class="foodtry">Explore Now!</span>
+          </header>
+        </a>
+      </section>
+      <figure>
+        <img
+          class="amsfood"
+          src="./img/homeFood.jpg"
+          alt="HomepageHiddenGems"
+          title="Amsterdam Food Image"
+        />
+      </figure>
+    </aside>
 
-    <!-----------------------Transport---------------------------->
-
-    <div class="transport-context">
-      <ul>
-        <li>Transport</li>
-        <li>Transport</li>
-        <li>Transport</li>
-        <li>Transport</li>
-        <li>Transport</li>
-        <li>Transport</li>
-        <li>Transport</li>
-        <li>Transport</li>
-        <li>Transport</li>
-      </ul>
-    </div>
-
-    <div class="transport">
-      <div class="transport-container">
+    <!-- aside for Acquire Transportation -->
+    <aside class="transport">
+      <section class="transport-container">
         <h1>Acquire Transportation.</h1>
         <p>
           Uncover hidden gems with our unique transport experiences. From remote
-          villages to bustling cities, explore the extraordinary with 'Hidden
-          Gems' transport.
+          villages to bustling cities, explore the <em>extraordinary</em> with
+          'Hidden Gems' transport.
         </p>
         <a href="./transport.html">
-          <div class="button">
-            <div class="try-it">Explore Now!</div>
-          </div></a
-        >
-      </div>
-      <img
-        class="amsTransport"
-        src="./img/homeTransport.png"
-        alt="HomepageHiddenGems"
-      />
-    </div>
+          <header class="button">
+            <span class="try-it">Explore Now!</span>
+          </header>
+        </a>
+      </section>
+      <figure>
+        <img
+          class="amsTransport"
+          src="./img/homeTransport.png"
+          alt="HomepageHiddenGems"
+          title="Amsterdam Transport Image"
+        />
+      </figure>
+    </aside>
 
-    <!---------------------Footer----------------->
-
+    <!-- footer -->
     <footer>
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="./img/LOGO.png" alt="Logo" />
-        </div>
-        <div class="footer-links">
+      <aside class="footer-content">
+        <section class="footer-logo">
+          <a href="./index.html">
+            <img class="logo" src="./img/LOGO.png" alt="logo" title="logo" /></a>
+        </section>
+        <section class="footer-links">
           <ul>
-            <li><a href="./HiddenGems.html">Hidden Gems</a></li>
-            <li><a href="./AmsFood.html">Ams-Food</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./HiddenGems.html">Gems</a></li>
+            <li><a href="./AmsFood.html">Food</a></li>
             <li><a href="./transport.html">Transportation</a></li>
             <li><a href="./contact.html">Contact</a></li>
           </ul>
-        </div>
+        </section>
 
-        <div class="footer-icons">
-          <img src="./svg/facebookIcon.svg" />
-          <img src="./svg/twitterIcon.svg" />
-          <img src="./svg/discordIcon.svg" />
-        </div>
-      </div>
-      <div class="copyright">Copyright &copy; 2023</div>
+        <figure class="footer-icons">
+          <figcaption>Social Media Icons</figcaption>
+          <img
+            src="./svg/facebookIcon.svg"
+            alt="Facebook Icon"
+            title="Facebook"
+          />
+          <img src="./svg/twitterIcon.svg" alt="Twitter Icon" title="Twitter" />
+          <img src="./svg/discordIcon.svg" alt="Discord Icon" title="Discord" />
+        </figure>
+      </aside>
+      <section class="copyright">Copyright &copy; 2023</section>
     </footer>
+
+    <!-- cookies -->
+
+    <div class="cookies-message">
+      This website uses cookies. <button class="accept-cookies">Accept</button>
+    </div>
   </body>
 </html>

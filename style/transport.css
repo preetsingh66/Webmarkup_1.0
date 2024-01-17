@@ -4,16 +4,34 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
   font-family: "Outfit", sans-serif;
 }
 
 /*------------------------header---------------------------------------------*/
+
 .logo {
   font-size: 35px;
   font-weight: bold;
   color: white;
-  padding: 0 100px;
+  padding: 0 20px;
+}
+
+nav {
+  background-color: #ffffff;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -22,16 +40,20 @@ nav ul li a {
   width: 100%;
 }
 
+nav ul li {
+  margin-right: 10px;
+}
+
 nav ul {
   float: right;
-  margin-right: 125px;
+  margin-right: 10px;
   font-size: larger;
   margin-top: 12px;
 }
 
 nav li {
   display: inline-block;
-  margin: 0 45px;
+  margin: 0 10px;
   line-height: 80px;
 }
 
@@ -66,7 +88,10 @@ nav li {
   text-align: center;
   padding-top: 35px;
 }
-
+.about:hover {
+  background-color: #c74a4a;
+  color: white;
+}
 .about p {
   margin-top: 108px;
   color: #ffffff;
@@ -78,23 +103,8 @@ nav li {
 
 /*-------------------------public--------------------------*/
 
-.transportation-context ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-}
-.transportation-context ul li {
-  color: #000000;
-  text-align: left;
-  font: 400 40px/74px "Outfit", sans-serif;
-  display: inline-block;
-  white-space: nowrap;
-  margin-right: 5px;
-  padding: 10px;
-}
-
-.Public {
+.Public,
+.canal {
   background-color: rgb(255, 255, 255);
   font: 36px "Outfit", sans-serif;
   width: 100%;
@@ -102,53 +112,6 @@ nav li {
   align-items: center;
   justify-content: center;
 }
-
-.Public-container {
-  text-align: left;
-  width: 532px;
-  height: 420px;
-  margin: 5% 5% 5% 5%;
-}
-
-.Public-container h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  left: 113px;
-  top: 1420px;
-  width: 532px;
-  height: 68px;
-}
-
-.Public-container p {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.PublicPhoto {
-  border-radius: 39px;
-  width: 649px;
-  height: 410px;
-}
-
-/*-------------------------biking--------------------------*/
-
-.biking-context ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #000000;
-}
-.biking-context ul li {
-  color: #ffffff;
-  text-align: left;
-  font: 400 40px/74px "Outfit", sans-serif;
-  display: inline-block;
-  white-space: nowrap;
-  margin-right: 5px;
-  padding: 10px;
-}
-
 .biking {
   background-color: rgb(0, 0, 0);
   color: white;
@@ -159,75 +122,52 @@ nav li {
   justify-content: center;
 }
 
-.biking-container {
-  text-align: left;
-  width: 532px;
-  height: 420px;
-  margin: 5% 5% 5% 5%;
-}
-
-.biking-container h1 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  left: 113px;
-  top: 1420px;
-  width: 532px;
-  height: 68px;
-}
-
-.biking-container p {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.bikingPhoto {
-  border-radius: 39px;
-  width: 649px;
-  height: 410px;
-}
-
-/*-------------------------canal--------------------------*/
-
-.canal {
-  background-color: rgb(255, 255, 255);
-  font: 36px "Outfit", sans-serif;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+.Public-container,
+.biking-container,
 .canal-container {
   text-align: left;
-  width: 532px;
-  height: 420px;
   margin: 5% 5% 5% 5%;
 }
 
+.Public-container h1,
+.biking-container h1,
 .canal-container h1 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 20px;
-  left: 113px;
-  top: 1420px;
-  width: 532px;
-  height: 68px;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-indent: 2px;
+  word-spacing: 2px;
+  
 }
 
+.Public-container p,
+.biking-container p,
 .canal-container p {
   font-size: 20px;
   font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-indent: 10px;
+  word-spacing: 2px;
 }
 
+.PublicPhoto,
+.bikingPhoto,
 .canalPhoto {
   border-radius: 39px;
-  width: 649px;
+  width: 550px;
   height: 410px;
+  border-color: grey;
+  border-style: dashed;
+  border-width: 3px;
+
+  
 }
 
-/*-------------------Footer--------------------*/
 
+/*-------------------Footer--------------------*/
 footer {
   background-color: #fff;
   color: #333;
@@ -275,4 +215,119 @@ footer {
   margin-right: 20px;
   font-size: 24px;
   color: #333;
+}
+
+
+
+/*----------------------responsive design for footer-------------*/
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links li {
+    margin: 10px 0;
+  }
+}
+
+
+@media screen and (min-width: 769px)and (max-width:950px) {
+  footer {
+    margin-top: 60px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+
+  .footer-icons {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .footer-icons i {
+    margin-right: 10px;
+  }
+}
+
+
+
+
+/*---------------------responsive design for navbar---------------*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+/*------------rest of the media query--------------*/
+
+@media (max-width: 768px) {
+  .Public,
+  .canal,
+  .biking {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .PublicPhoto,
+  .bikingPhoto,
+  .canalPhoto {
+    border-radius: 30px;
+    width: 400px;
+    height: 250px;
+    border-color: grey;
+    border-style: dashed;
+  }
+  .Public-container,
+  .biking-container,
+  .canal-container {
+    padding: 20px;
+  }
+  .Public-container h1,
+  .biking-container h1,
+  .canal-container h1 {
+    font-size: 24px;
+  }
+
+  .Public-container p,
+  .biking-container p,
+  .canal-container p {
+    font-size: 16px;
+  }
 }

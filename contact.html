@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="stylesheet" href="./style/contact.css" type="text/css" />
+    <meta name="author" content="Mohitpreet" />
+    <link
+      rel="icon"
+      href="img/favicon.png"
+      alt="favicon"
+      size="16x16"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,105 +23,124 @@
   <body>
     <!--------------------header------------------->
     <nav>
-      <img class="logo" src="./img/LOGO.png" alt="logo" />
+      <a href="./index.html">
+        <img class="logo" src="./img/LOGO.png" alt="logo" title="logo" /></a>
       <ul>
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./HiddenGems.html">Hidden Gems</a></li>
-        <li><a href="./AmsFood.html">Ams-Food</a></li>
+        <li><a href="./HiddenGems.html">Gems</a></li>
+        <li><a href="./AmsFood.html">Food</a></li>
         <li><a href="./transport.html">Transportation</a></li>
         <li><a href="">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="background"></div>
-    <div class="text">
-      <h1>
-        Want to know more? <br />
-        Reach out to us!
-      </h1>
-    </div>
+    <section class="background"></section>
+    <header class="text">
+      <h1>Want to <em>know</em> more? <strong>Reach</strong> out to us!</h1>
+    </header>
 
     <!-----------------------contact form-------------->
 
-    <form id="contact-form">
-      <legend>Contact Us</legend>
+    <section id="contact-container">
+      <form id="contact-form">
+        <fieldset>
+          <legend class="bigLetter">Contact Us</legend>
 
-      <div class="form-group">
-        <label
-          ><input type="radio" name="gender" value="male" id="male" />
-          Male</label
-        >
-        <label
-          ><input type="radio" name="gender" value="female" id="female" />
-          Female</label
-        >
-      </div>
+          <section class="form-group">
+            <label
+              ><input type="radio" name="gender" value="male" id="male" />
+              Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="female" id="female" />
+              Female</label
+            >
+          </section>
 
-      <div class="form-group">
-        <input
-          class="info"
-          type="text"
-          id="fullname"
-          name="fullname"
-          placeholder="Full name*"
-          required
+          <section class="form-group">
+            <input
+              class="info"
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Full name*"
+              required
+            />
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email*"
+              required
+            />
+          </section>
+
+          <section class="form-group">
+            <textarea
+              name="message"
+              placeholder="Your message here"
+              required
+            ></textarea>
+          </section>
+          <section class="form-group">
+            <input type="submit" value="Submit Request" />
+          </section>
+        </fieldset>
+      </form>
+
+      <!---------------------get in touch----------------->
+
+      <section class="contact-info">
+        <article class="bigLetter">or get in touch via:</article>
+        <span class="text">From Monday/Friday: 10:00 to 21:00</span>
+        <img
+          class="contact-svg"
+          src="./svg/call.svg"
+          alt="contact"
+          title="contact-svg"
         />
-
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email*"
-          required
+        <span class="text">+31 651 7308 72</span>
+        <img
+          class="contact-svg"
+          src="./svg/Email.svg"
+          alt="contact"
+          title="contact-svg"
         />
-      </div>
-
-      <div class="form-group">
-        <textarea
-          name="message"
-          placeholder="Your message here"
-          required
-        ></textarea>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Submit Request" />
-      </div>
-    </form>
-
-    <!---------------------get in touch----------------->
-
-    <aside class="contact-info">
-      <legend>or get in touch via:</legend>
-      <span class="text">From Monday/Friday: 10:00 to 21:00</span>
-      <img class="contact-svg" src="./svg/call.svg" />
-      <span class="text">+31 651 7308 72</span>
-      <img class="contact-svg" src="./svg/Email.svg" />
-      <span class="text">info@amshiddengem.nl</span>
-    </aside>
-
+        <span class="text">info@amshiddengem.nl</span>
+      </section>
+    </section>
     <!---------------------Footer----------------->
 
     <footer>
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img src="./img/LOGO.png" alt="Logo" />
-        </div>
-        <div class="footer-links">
+      <section class="footer-content">
+        <figure class="footer-logo">
+          <a href="./index.html">
+            <img class="logo" src="./img/LOGO.png" alt="logo" title="logo" /></a>
+        </figure>
+        <section class="footer-links">
           <ul>
-            <li><a href="">Hidden Gems</a></li>
-            <li><a href="./AmsFood.html">Ams-Food</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./HiddenGems.html">Gems</a></li>
+            <li><a href="./AmsFood.html">Food</a></li>
             <li><a href="./transport.html">Transportation</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
-        </div>
+        </section>
 
-        <div class="footer-icons">
-          <img src="./svg/facebookIcon.svg" />
-          <img src="./svg/twitterIcon.svg" />
-          <img src="./svg/discordIcon.svg" />
-        </div>
-      </div>
-      <div class="copyright">Copyright &copy; 2023</div>
+        <!-- Social Media Icons -->
+        <figure class="footer-icons">
+          <figcaption>Social Media Icons</figcaption>
+          <img
+            src="./svg/facebookIcon.svg"
+            alt="Facebook Icon"
+            title="Facebook"
+          />
+          <img src="./svg/twitterIcon.svg" alt="Twitter Icon" title="Twitter" />
+          <img src="./svg/discordIcon.svg" alt="Discord Icon" title="Discord" />
+        </figure>
+      </section>
+      <section class="copyright">Copyright &copy; 2023</section>
     </footer>
   </body>
 </html>
